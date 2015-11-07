@@ -131,6 +131,7 @@
                                   </div>
                               </a>
                           </div>
+                    </div>
                 </div>
             </div>
 
@@ -208,13 +209,13 @@
         <script type="text/javascript">
             var projects = document.getElementsByClassName("panel-body");
             var tallestHeight = 0;
-            for (x in projects) {
-                if (projects[x].offsetHeight > tallestHeight) {
-                    tallestHeight = projects[x].offsetHeight;
+            for (i=0; i < projects.length; i++) {
+                if (projects[i].offsetHeight > tallestHeight) {
+                    tallestHeight = projects[i].offsetHeight;
                 }
             }
-            for (x in projects) {
-                projects[x].style.height = tallestHeight;
+            for (i=0; i < projects.length; i++) {
+                projects[i].style.height = tallestHeight + "px";
             }
         </script>
     </body>
