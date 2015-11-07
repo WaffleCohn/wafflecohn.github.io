@@ -1,6 +1,7 @@
 html, body, main {
-    background-color: #3f92d2;
-    /*background-color: #f5f5f5;*/
+    background-color: #4284D3;
+    color: white;
+    font-size: 18px;
 }
 
 .text-centered {
@@ -10,7 +11,6 @@ html, body, main {
 .line {
     height: 4px;
     background-color: white;
-    /*background-color: #37474f;*/
     border-radius: 2px;
 }
 
@@ -36,15 +36,15 @@ nav .container {
 
 .body {
     padding: 30px;
-    background-color: #8fc1e8;
+    /*background-color: #8fc1e8;*/
     /*background-color: #90a4ae;*/
-    border-radius: 15px;
     margin-bottom: 80px;
+    border: 5px dashed white;
 }
 
 @keyframes shrink {
     from {
-        
+
     }
     to {
         -webkit-transform: scale(1);
@@ -56,7 +56,7 @@ nav .container {
 
 @keyframes enlarge {
     from {
-        
+
     }
     to {
         -webkit-transform: scale(1.05);
@@ -80,19 +80,29 @@ nav .container {
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
     -ms-transform: scale(1.05);
-    
+
 }
 
 .panel-heading {
-    background-color: #145688;
+    background-color: #37474F !important;
+}
+
+.panel{
+  border: none !important;
+}
+
+.panel-body{
+    background-color: F5F5F5;
+    font-size: 18px;
 }
 
 .achievement {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
+    /*background-color: #ffffff;*/
+    /*border: 2px solid #dddddd;*/
     border-radius: 15px;
     padding: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top:10px;
 }
 
 .contact {
