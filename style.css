@@ -1,21 +1,23 @@
-html, body {
-    background: black url(http://king-novels.com/wp-content/uploads/2013/07/WebsiteBackgroundTexture14.jpg);
-    background-repeat: no-repeat;
+html, body, main {
+    background-color: #3f92d2;
+    /*background-color: #f5f5f5;*/
 }
 
-#cover {
-    background: black url(http://king-novels.com/wp-content/uploads/2013/07/WebsiteBackgroundTexture14.jpg) no-repeat;
+.text-centered {
+    text-align: center;
 }
 
-.main {
-    margin: 30px;
-    background-color: #eee;
+.line {
+    height: 4px;
+    background-color: white;
+    /*background-color: #37474f;*/
+    border-radius: 2px;
 }
 
 .name {
+    font-size: 105px;
     font-family: 'Courgette', cursive;
-    font-size: 110px;
-    padding-top: 40px;
+    color: white;
 }
 
 nav .container {
@@ -27,18 +29,17 @@ nav .container {
     font-size: 16px;
 }
 
-.text-centered {
-    text-align: center;
-}
-
-.section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.side-header {
-    font-size: 22px;
+.header {
+    color: white;
     font-weight: bold;
+}
+
+.body {
+    padding: 30px;
+    background-color: #8fc1e8;
+    /*background-color: #90a4ae;*/
+    border-radius: 15px;
+    margin-bottom: 80px;
 }
 
 @keyframes shrink {
@@ -82,14 +83,30 @@ nav .container {
     
 }
 
-.project {
-    height: 265px;
+.panel-heading {
+    background-color: #145688;
 }
 
-.accolade {
+.achievement {
     background-color: #ffffff;
     border: 1px solid #dddddd;
+    border-radius: 15px;
     padding: 15px;
-    box-shadow: 10px 10px 5px #888888;
     margin-bottom: 30px;
+}
+
+.contact {
+    color: white;
+}
+
+#email:hover {
+    color: #e34d41;
+}
+
+#github:hover {
+    color: #171515;
+}
+
+#facebook:hover {
+    color: #3c5a99;
 }
