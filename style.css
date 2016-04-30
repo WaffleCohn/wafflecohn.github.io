@@ -1,5 +1,5 @@
 html, body, main {
-    background-color: #4284D3;
+    background-color: #039BE5; // darker blue: #4284D3;
     color: white;
     font-size: 18px;
 }
@@ -9,6 +9,13 @@ html, body, main {
 }
 
 .line {
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    display: none;
+}
+
+.big-line {
     height: 4px;
     background-color: white;
     border-radius: 2px;
@@ -18,6 +25,11 @@ html, body, main {
     font-size: 105px;
     font-family: 'Courgette', cursive;
     color: white;
+}
+
+.section {
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 nav .container {
@@ -111,12 +123,15 @@ nav .container {
 
 #email:hover {
     color: #e34d41;
+    cursor: pointer;
 }
 
 #github:hover {
     color: #171515;
+    cursor: pointer;
 }
 
 #facebook:hover {
     color: #3c5a99;
+    cursor: pointer;
 }
