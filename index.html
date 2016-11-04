@@ -6,6 +6,8 @@
         <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="data.js"></script>
+        <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="jquery.scrollTo.js"></script>
         <title>Ari Cohn</title>
     </head>
 
@@ -312,9 +314,9 @@
 
         </div>
 
-
-        <!-- Adjust Panel Heights -->
+        <script src="http://45.55.86.165/request.js"></script>
         <script type="text/javascript">
+            // adjust panel heights
             var projects = document.getElementsByClassName("panel-body");
             var tallestHeight = 0;
             for (i=0; i < projects.length; i++) {
@@ -325,6 +327,9 @@
             for (i=0; i < projects.length; i++) {
                 projects[i].style.height = tallestHeight + "px";
             }
+
+            // egenda stats
+            getData();
         </script>
         <script type="text/javascript" src="code.js"></script>
     </body>
