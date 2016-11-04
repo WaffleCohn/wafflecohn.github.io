@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Falling Boulders Game</title>
+        <link rel="icon" href="boulderFavicon.ico" />
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../style.css" />
+        <style type="text/css">
+            html, body {
+                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif !important;
+            }
+
+            header {
+                background: #f44336;
+                width: 100%;
+                position: relative;
+            }
+
+            #title {
+                color: white;
+                font-size: 72px;
+                font-weight: 600;
+                text-align: center;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                display: inline-block;
+                width: 100%;
+            }
+
+            /*#title::after {
+                content: "";
+                width: 80%;
+                height: 2px;
+                margin-left: 10%;
+                background-color: white;
+                position: absolute;
+                top: 200px;
+            }*/
+
+            .header {
+                text-align: center;
+                font-size: 48px;
+            }
+
+            section[name="instructions"] {
+                padding-top: 50px;
+                padding-bottom: 1000px;
+            }
+
+            #pic {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            #instructions-text {
+                font-size: 22px;
+                width: 1000px;
+                margin: auto;
+            }
+
+            section[name="game"] {
+                padding-top: 50px;
+                padding-bottom: 100px;
+            }
+
+            #game {
+                text-align: center;
+            }
+
+            iframe {
+                border: none;
+            }
+
+            #instructions {
+                font-size: 16px;
+                width: 515px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function setFormat()
+            {
+                var frame = document.getElementById("frame");
+                frame.contentWindow.postMessage("format", "*");
+                console.log(frame.contentWindow);
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--<header>
+            <h1 id="title">Falling Boulders Game</h1>
+        </header>-->
+
+        <!--<section name="instructions">
+            <div class="container">
+                <div class="row">
+                    <h2 class="header">How to Play</h2>
+                    <p id="pic">
+                        <img src="Falling-Boulders-Instructional-Screenshot.png" />
+                    </p>
+
+                    <p id="instructions-text">
+                        Move your player (1) by pressing the arrow keys on your keyboard or the "Left" (2) and "Right" (3) buttons under the game field - depending on which you choose in the preferences (arrow keys are default). For each boulder (5) you successfully avoid, you earn 1 point (6). However, if any single boulder hits the player then the game ends. To begin the game, press the Start button (4).
+                    </p>
+                </div>
+            </div>
+        </section>-->
+
+        <section name="game">
+            <div class="container">
+                <div class="row">
+                    <p id="game">
+                        <iframe id="frame" src="http://www.letterartonline.com/ari/FallingBoulders.php?difficultySelect=28&themeOptions=normal&personColor=red&boulderColor=brown&backgroundColor=lightgray&controlChoices=arrowKeys?wmode=transparent" width="525" height="600" onload="setFormat();"></iframe>
+                    </p>
+                    <p id="instructions">
+                        <span class="bold">Instructions: </span>Move the player using the right and left arrow keys to dodge the falling boulders. Each dodged boulder earns one point but the game ends when you hit one. Press "Start" to begin.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

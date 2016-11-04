@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+		<title>Falling Boulders Game</title>
+
+		<style type="text/css">
+			body {
+				background-image: url(http://t2.gstatic.com/images?q=tbn:ANd9GcTfzaBherGVJPQwbAgwD0cgggBkgiN4Dbw15QOXOlFhS5q4xpNf7w);
+				background-repeat: none;
+				background-size: cover;
+			}
+
+			#pageInfo {
+				margin-right: auto;
+				margin-left: auto;
+				padding: 10px;
+				width: 50%;
+				background-color: white;
+			}
+
+			h1 {
+				text-align: center;
+				font-size: 45px;
+			}
+
+			h2 {
+				text-align: center;
+				clear: right;
+			}
+
+			p {
+				margin: 2px;
+				padding: 0px;
+			}
+
+			fieldset {
+				width: 55%;
+				display: none;
+				border: solid black 1px;
+			}
+
+			legend {
+				font-weight: bold;
+				font-size: 25px;
+			}
+
+			#gamePic {
+				width: 50%;
+			}
+
+			#difficulty, #theme, #controls {
+				font-size: 25px;
+			}
+
+			#description, #instructions {
+				font-size: 20px;
+			}
+
+			#up, #down {
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			#down, #down2 {
+				display: none;
+			}
+
+			#up, #up2 {
+				display: inline;
+			}
+
+			#rightArrow {
+				display: block;
+			}
+
+			#downArrow {
+				display: none;
+			}
+
+		</style>
+
+		<script type="text/javascript">
+			function preferenceShow() {
+				document.getElementById("up").style.display = "none";
+				document.getElementById("down").style.display = "inline";
+				document.getElementById("up2").style.display = "none";
+				document.getElementById("down2").style.display = "inline";
+				document.getElementById("difficulty").style.display = "block";
+				document.getElementById("theme").style.display = "block";
+				document.getElementById("controls").style.display = "block";
+			}
+
+			function preferenceHide() {
+				document.getElementById("up").style.display = "inline";
+				document.getElementById("down").style.display = "none";
+				document.getElementById("up2").style.display = "inline";
+				document.getElementById("down2").style.display = "none";
+				document.getElementById("difficulty").style.display = "none";
+				document.getElementById("theme").style.display = "none";
+				document.getElementById("controls").style.display = "none";
+			}
+
+			function rightArrowShow() {
+				document.getElementById("rightArrow").style.display = "block";
+				document.getElementById("downArrow").style.display = "none";
+				document.getElementById("customSet").style.display = "none";
+			}
+
+			function downArrowShow() {
+				document.getElementById("rightArrow").style.display = "none";
+				document.getElementById("downArrow").style.display = "inline";
+				document.getElementById("customSet").style.display = "inline";
+			}
+
+		</script>
+
+		<link href="../../../Pictures/boulderFavicon.ico" rel="shortcut icon" />
+
+	</head>
+
+	<body>
+		<div id="pageInfo" style="position: relative;">
+			<h1>Falling  Boulders Game</h1>
+
+			<hr />
+
+			<h2 style="font-size: 35px">About the Game</h2>
+
+			<p id="description">
+				<b>Description:</b> In Falling Boulders, the object of the game is to dodge as many many boulders fall from the top of the screen. The player can only move left and right and the boulders fall pretty fast so you will have to be quick.
+			</p>
+
+			<div align="center">
+				<img src="http://i46.tinypic.com/2cnusy1.png" alt="Game Screenshot" id="gamePic">
+			</div>
+
+			<p id="instructions">
+				<b>Instructions:</b> Move your player (1) by pressing the arrow keys on your keyboard the Left (2) and Right (3) buttons under the game field (depending on which you choose in the preferences [the arrow keys are set to default]). For each boulder (5) you successfully avoid you earn 1 point (6). But if any single boulder hits the player the game ends. To begin the game press the Start button (4).
+			</p>
+
+			<br />
+			<hr />
+
+			<h2 style="font-size: 35px;"><img src="http://i50.tinypic.com/1199zd1.png" onclick="preferenceHide();" alt="down arrow" style="height: 25px; width: 25px" id="down2"><img src="http://i47.tinypic.com/2z6d0y9.png" onclick="preferenceShow();" alt="up arrow" style="height: 25px; width: 25px" id="up2"> Game Preferences <img src="http://i50.tinypic.com/1199zd1.png" onclick="preferenceHide();" alt="down arrow" style="height: 25px; width: 25px" id="down"><img src="http://i47.tinypic.com/2z6d0y9.png" onclick="preferenceShow();" alt="up arrow" style="height: 25px; width: 25px" id="up"></h2>
+			<form name="elFormicus" action="FallingBoulders.php">
+				<div id="difficulty" style="display: none;">
+					Difficulty:
+					<select style="font-size: 17px;" name="difficultySelect">
+						<option value="40" selected="selected">Easy</option>
+						<option value="28">Medium</option>
+						<option value="18">Hard</option>
+						<option value="17">Insane</option>
+					</select>
+				</div>
+
+				<br />
+
+				<div id="theme" style="display: none;">
+					Theme:
+					<select style="font-size: 17px;" name="themeOptions">
+						<option value="normal" selected="selected">Normal</option>
+						<option value="space">Space</option>
+						<option value="ocean">Ocean</option>
+						<option value="custom">Custom</option>
+					</select>
+
+					<br />
+
+					<p id="downArrow"><img src="http://i46.tinypic.com/mn13yu.png" alt="black tiangle pointing down" style="height: 30px; width: 100px;" onclick="rightArrowShow();">
+						<fieldset id="customSet" style="font-size: 20px;">
+							<legend>
+								Custom Settings
+							</legend>
+							Person Color:
+							<select style="font-size: 17px;" name="personColor">
+								<option value="black">Black</option>
+								<option value="blue">Blue</option>
+								<option value="brown">Brown</option>
+								<option value="green">Green</option>
+								<option value="red" selected="selected">Red</option>
+								<option value="orange">Orange</option>
+								<option value="pink">Pink</option>
+								<option value="purple">Purple</option>
+								<option value="white">White</option>
+								<option value="yellow">Yellow</option>
+
+							</select>
+							<br />
+							Boulder Color:
+							<select style="font-size: 17px;" name="boulderColor">
+								<option value="black">Black</option>
+								<option value="blue">Blue</option>
+								<option value="brown" selected="selected">Brown</option>
+								<option value="green">Green</option>
+								<option value="red">Red</option>
+								<option value="orange">Orange</option>
+								<option value="pink">Pink</option>
+								<option value="purple">Purple</option>
+								<option value="white">White</option>
+								<option value="yellow">Yellow</option>
+
+							</select>
+							<br />
+							Background Color:
+							<select style="font-size: 17px;" name="backgroundColor">
+								<option value="black">Black</option>
+								<option value="blue">Blue</option>
+								<option value="brown">Brown</option>
+								<option value="green">Green</option>
+								<option value="lightgray" selected="selected">Light Gray</option>
+								<option value="red">Red</option>
+								<option value="orange">Orange</option>
+								<option value="pink">Pink</option>
+								<option value="purple">Purple</option>
+								<option value="white">White</option>
+								<option value="yellow">Yellow</option>
+
+							</select>
+						</fieldset>
+					</p>
+					<p id="rightArrow"><img src="http://i50.tinypic.com/2v29xtv.png" alt="black triangle pointing right" style="height: 20px; width: 100px;" onclick="downArrowShow();"> Custom Settings
+					</p>
+				</div>
+
+				<br />
+
+				<div id="controls" style="display: none;">
+					Controls:
+					<select style="font-size: 17px;" name="controlChoices">
+						<option value="arrowKeys" selected="selected">Arrow Keys</option>
+						<option value="buttons">Buttons</option>
+					</select>
+				</div>
+
+				<hr />
+				<br />
+
+				<div align="center">
+					<input type="submit" value="Play" style="font-size: 30px">
+					<!--  <button onclick="playButton();" style="font-size: 30px">
+					Play
+					</button>  -->
+				</div>
+			</form>
+
+		</div>
+	</body>
+
+</html>
