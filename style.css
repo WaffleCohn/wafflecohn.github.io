@@ -4,6 +4,10 @@ html, body, main {
     font-size: 18px;
 }
 
+a:focus {
+    text-decoration: none;
+}
+
 .text-centered {
     text-align: center;
 }

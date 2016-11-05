@@ -36,3 +36,15 @@ write += '</div>';
 write += '</div>';
 
 achievementHolder.innerHTML += write;
+
+/* MARK:- Smooth Scrolling */
+$(function(){
+    $("nav a").click(function(e){
+        e.preventDefault();
+        $("html,body").scrollTo(this.hash, this.hash);
+
+        // remove underline from link
+        this.focus();
+        this.blur();
+    });
+});
