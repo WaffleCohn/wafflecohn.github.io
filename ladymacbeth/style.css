@@ -1,0 +1,178 @@
+html, body {
+	//width: 100%;
+	//height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#home {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+.vert-panel {
+	width: 50%;
+	height: 100%;
+	left: 0;
+}
+
+#homeLeft {
+	//background: blue;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+}
+
+#homeLeft img {
+	height: 100%;
+	min-width: 100%;
+	width: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+#homeRight {
+	background: green;
+	float: right;
+	position: relative;
+	padding: 0;
+}
+
+.left-content {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    color: white;
+    text-align: center;
+
+    font-family: 'Hind', sans-serif
+}
+
+.left-content h1 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-size: 70px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.left-content h2 {
+	font-size: 28px;
+	line-height: 35px;
+}
+
+.dr-color {
+	color: #7BB0DB;
+}
+
+.phil-color {
+	color: #0085C6;
+}
+
+.horiz-panel {
+	width: 100%;
+	height: 50%;
+	color: white;
+	overflow: hidden;
+	position: relative;
+}
+
+.horiz-panel img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	-webkit-transition: -webkit-transform 1s linear;
+    -moz-transition: -moz-transform 1s linear;
+    -ms-transition: -ms-transform 1s linear;
+    -o-transition: -o-transform 1s linear;
+    transition: transform 1s linear;
+
+    font-family: 'Hind', sans-serif
+}
+
+.horiz-panel:hover > img {
+	-webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.mask {
+	width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1a1b23;
+}
+
+.heading {
+	position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.heading i {
+	background: rgba(256, 256, 256, 0.2);
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    height: 60px;
+    line-height: 60px;
+    margin: auto auto 10px;
+    text-align: center;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+    width: 60px;
+}
+
+.heading h2 {
+	margin: 0;
+	font-size: 28px;
+}
+
+.heading h3 {
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-style: italic;
+	font-size: 22px;
+}
+
+#videoSelector {
+	//background: red;
+	cursor: pointer;
+}
+
+#storySelector {
+	background: purple;
+	cursor: pointer;
+}
+
+#close-btn {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 3%;
+	top: 30px;
+	cursor: pointer;
+	z-index: 1000;
+}
