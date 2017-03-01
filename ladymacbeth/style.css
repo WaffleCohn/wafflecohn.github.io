@@ -105,11 +105,11 @@ html, body {
 	left: 0;
 	width: 100%;
 	height: auto;
-	-webkit-transition: -webkit-transform 1s linear;
-    -moz-transition: -moz-transform 1s linear;
-    -ms-transition: -ms-transform 1s linear;
-    -o-transition: -o-transform 1s linear;
-    transition: transform 1s linear;
+	-webkit-transition: -webkit-transform 0.8s linear;
+    -moz-transition: -moz-transform 0.8s linear;
+    -ms-transition: -ms-transform 0.8s linear;
+    -o-transition: -o-transform 0.8s linear;
+    transition: transform 0.8s linear;
 
     font-family: 'Hind', sans-serif;
     cursor: pointer;
