@@ -25,7 +25,6 @@ html, body {
 }
 
 #homeLeft {
-	//background: blue;
 	float: left;
 	overflow: hidden;
 	position: relative;
@@ -44,7 +43,6 @@ html, body {
 }
 
 #homeRight {
-	background: green;
 	float: right;
 	position: relative;
 	padding: 0;
@@ -170,12 +168,10 @@ html, body {
 }
 
 #videoSelector {
-	//background: red;
 	cursor: pointer;
 }
 
 #storySelector {
-	background: purple;
 	cursor: pointer;
 }
 
