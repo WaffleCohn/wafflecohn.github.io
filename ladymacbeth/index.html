@@ -4,7 +4,8 @@
 		<title>Lady Macbeth</title>
 		<link rel="stylesheet" href="bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
-		<link rel="stylesheet" href="style.css" type="text/css">	
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script type="text/javascript" src="story.js"></script>
 	</head>
 	<body>
 		<div id="home">
@@ -19,7 +20,7 @@
 			</div>
 
 			<div id="homeRight" class="vert-panel">
-				<div id="videoSelector" class="horiz-panel">
+				<div id="videoSelector" class="horiz-panel" onclick="displayVideo()">
 					<img src="camera.jpg" />
 					<div class="mask"></div>
 
@@ -29,13 +30,13 @@
 						</div>
 
 						<div class="col-sm-10">
-							<h2>Video</h2>
+							<h2>VIDEO</h2>
 							<h3>Watch the full episode here</h3>
 						</div>
 					</div>
 				</div>
 
-				<div id="storySelector" class="horiz-panel">
+				<div id="storySelector" class="horiz-panel" onclick="displayStory();">
 					<img src="book.jpg" />
 					<div class="mask"></div>
 
@@ -45,7 +46,7 @@
 						</div>
 
 						<div class="col-sm-10">
-							<h2>Story</h2>
+							<h2>STORY</h2>
 							<h3>Read Lady Macbeth's thrilling tale</h3>
 						</div>
 					</div>
@@ -54,9 +55,47 @@
 			</div>
 		</div>
 
-		<div id="close-btn"></div>
+		<div id="close-btn" onclick="returnHome();"><i class="fa fa-times"></i></div>
 
-		<div id="videoPage">
+		<div id="videoPage" style="display: none;">
+			<div class="title-container col-md-5 col-sm12">
+				<div class="mask"></div>
+
+				<div class="main-heading">
+					<h1>VIDEO</h1>
+				</div>
+			</div>
+
+			<div class="content-container col-md-7 col-sm-12">
+				<div class="content">
+					<h2>Murder, Deceit, and Betrayal: <br />The True Story of Lady Macbeth</h2>
+					<div class="col-lg-10 col-lg-offset-1">
+						<video width="560" height="315" controls>
+				            <source src="http://letterartonline.com/ari/Emerson-HS-Ad.mp4" type="video/mp4">
+				                Your browser does not support the video tag. Use this link instead: <a></a>
+				        </video>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="storyPage" style="display: block;">
+			<div class="title-container col-md-5 col-sm12">
+				<div class="mask"></div>
+
+				<div class="main-heading">
+					<h1>STORY</h1>
+				</div>
+			</div>
+
+			<div class="content-container col-md-7 col-sm-12">
+				<div class="content">
+					<h2>Murder, Deceit, and Betrayal: <br />The True Story of Lady Macbeth</h2>
+					<div id="storyContainer" class="col-lg-10 col-lg-offset-1">
+						
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!--<div class="canvas">
@@ -66,5 +105,7 @@
 	                Your browser does not support the video tag. Use this link instead: <a></a>
 	        </video>
 	    </div>-->
+
+	    <script type="text/javascript" src="code.js"></script>
 	</body>
 </html>
