@@ -3,6 +3,9 @@ var home = document.getElementById("home"),
 	story = document.getElementById("storyPage"),
 	storyContainer = document.getElementById("storyContainer");
 
+// alternate video links
+var alternates = ["http://letterartonline.com/ari/ladymacbeth.mp4", "https://youtu.be/Szm_UKYWq1M"];
+
 // display story
 for (var i=0; i < storyJSON.paragraphs.length; i++)
 {
