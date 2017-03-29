@@ -1,3 +1,4 @@
+/* MARK:- Load Acheivements */
 var achievementHolder = document.getElementById("achievement-holder"),
     write = "";
 
@@ -48,3 +49,21 @@ $(function(){
         this.blur();
     });
 });
+
+/* MARK:- Egenda Downloads */
+var counter = document.getElementById("egendaDownloadCount"),
+    defaultCount = 75000;
+
+function commaSeparate(x)
+{
+    var regex = /(\d{3})(?=\d)/g,
+        str = "" + x;
+    return str.split("").reverse().join("").replace(regex, "$1,").split("").reverse().join("");
+}
+
+// default in case of error
+counter.innerHTML = commaSeparate(defaultCount);
+
+
+
+

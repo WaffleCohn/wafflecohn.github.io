@@ -5,7 +5,7 @@ var achievements = {
         {'competition': 'UTD Battle of the Brains (Spring)', 'award': 'First Place'},
         {'competition': 'Plano Senior HS Coding Contest', 'award': 'Second Place'},
         {'competition': 'Southlake Carroll Coding Contest', 'award': 'Third Place (indiv.)'},
-        {'competition': 'USA Computing Olympiad', 'award': 'Gold Division'},
+        {'competition': 'USA Computing Olympiad', 'award': 'Platinum Division'},
         {'competition': 'Richardson HS Coding Contest', 'award': 'First Place (team), Sixth Place (indiv.)'},
         {'competition': 'UTD Battle of the Brains (Fall)', 'award': 'Second Place'},
         {'competition': 'Frisco First Bytes', 'award': 'First Place'},
@@ -14,7 +14,7 @@ var achievements = {
 
     'Other':[
         {'competition': 'Academic Decathlon Mini Meet', 'award': 'Second Econ, Third Science, Fourth Math'},
-        {'competition': 'National Merit', 'award': 'Semifinalist'},
+        {'competition': 'National Merit', 'award': 'Finalist'},
         {'competition': 'Academic Decathlon Regionals', 'award': 'Fourth Science'},
         {'competition': 'JCC International Maccabi Games', 'award': 'Fourth Place Soccer'},
         {'competition': 'Academic Excellence', 'award': 'Intro to Engineering Design, Spanish II'}
