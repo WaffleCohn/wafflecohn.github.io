@@ -64,6 +64,29 @@ function commaSeparate(x)
 // default in case of error
 counter.innerHTML = commaSeparate(defaultCount);
 
+// egenda stats
+getData(function(){
 
+    var downloads = Data.getDownloads();
+
+    if (downloads < 100000)
+    {
+        downloads /= 10000;
+        if (downloads - Math.floor(downloads) >= .5)
+            downloads = Math.floor(downloads) + .5;
+        else
+            downloads = Math.floor(downloads);
+        downloads *= 10000;
+    }
+    else
+    {
+        downloads /= 10000;
+        downloads = Math.floor(downloads);
+        downloads *= 10000;
+    }
+
+    counter.innerHTML = commaSeparate(downloads);
+
+});
 
 
