@@ -52,7 +52,7 @@ $(function(){
 
 /* MARK:- Egenda Downloads */
 var counter = document.getElementById("egendaDownloadCount"),
-    defaultCount = 75000;
+    defaultCount = 180000;
 
 function commaSeparate(x)
 {

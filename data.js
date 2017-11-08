@@ -1,28 +1,22 @@
 var achievements = {
     'Computer Science':[
+        {'competition': 'UIL Computer Science (State)', 'award': 'Third Place Team'},
+        {'competition': 'PicoCTF', 'award': 'Eighth Place Team'},
         {'competition': 'HP Codewars (Advanced)', 'award': 'Second Place'},
-        {'competition': 'Plano East HS Coding Contest (Advanced)', 'award': 'First Place (team), Sixth Place (indiv.)'},
-        {'competition': 'Plano Senior HS Coding Contest (Advanced)', 'award': 'Second Place (team), Fifth Place (indiv.)'},
-        {'competition': 'Richardson HS Coding Contest (Advanced)', 'award': 'First Place (team), Second Place (indiv.)'},
-        {'competition': 'Frisco First Bytes (Advanced)', 'award': 'Third Place'},
-        {'competition': 'Cyber Patriot', 'award': 'Platinum Division'},
-        {'competition': 'HP Codewars', 'award': 'Third Place'},
-        {'competition': 'UTD Battle of the Brains (Spring)', 'award': 'First Place'},
-        {'competition': 'Plano Senior HS Coding Contest', 'award': 'Second Place'},
-        {'competition': 'Southlake Carroll Coding Contest', 'award': 'Third Place (indiv.)'},
+        {'competition': 'Plano East HS Coding Contest', 'award': 'First Place (team), Sixth Place (indiv.)'},
+        {'competition': 'Richardson HS Coding Contest', 'award': 'First Place (team), Second Place (indiv.)'},
         {'competition': 'USA Computing Olympiad', 'award': 'Platinum Division'},
-        {'competition': 'Richardson HS Coding Contest', 'award': 'First Place (team), Sixth Place (indiv.)'},
+        {'competition': 'Cyber Patriot', 'award': 'Platinum Division'},
+        {'competition': 'HP Codewars (Novice)', 'award': 'Third Place'},
+        {'competition': 'UTD Battle of the Brains (Spring)', 'award': 'First Place'},
         {'competition': 'UTD Battle of the Brains (Fall)', 'award': 'Second Place'},
-        {'competition': 'Frisco First Bytes', 'award': 'First Place'},
         {'competition': 'Codeday Dallas', 'award': 'Best Application'}
     ],
 
     'Other':[
-        {'competition': 'Academic Decathlon Regionals 2017', 'award': 'First Econ, Third Art'},
-        {'competition': 'Academic Decathlon Mini Meet', 'award': 'Second Econ, Third Science, Fourth Math'},
         {'competition': 'National Merit', 'award': 'Finalist'},
-        {'competition': 'Academic Decathlon Regionals 2016', 'award': 'Fourth Science'},
-        {'competition': 'JCC International Maccabi Games', 'award': 'Fourth Place Soccer'},
-        {'competition': 'Academic Excellence', 'award': 'Intro to Engineering Design, Spanish II'}
+        {'competition': 'Academic Decathlon Regionals 2017', 'award': 'First Place Econ, Third Place Art'},
+        {'competition': 'Academic Decathlon Regionals 2016', 'award': 'Fourth Place Science'},
+        {'competition': 'JCC International Maccabi Games', 'award': 'Fourth Place Soccer'}
     ]
 };
