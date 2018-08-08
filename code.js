@@ -68,7 +68,7 @@ function commaSeparate(x)
 counter.innerHTML = commaSeparate(defaultCount);
 
 // egenda stats
-getData(function(){
+/*getData(function(){
 
     var downloads = Data.getDownloads();
 
@@ -90,6 +90,6 @@ getData(function(){
 
     counter.innerHTML = commaSeparate(downloads);
 
-});
+});*/
 
 
