@@ -1,5 +1,6 @@
 var achievements = {
     'Computer Science':[
+        {'competition': 'Algorithms with a Purpose', 'award': 'Third Place Team'},
         {'competition': 'UIL Computer Science (State)', 'award': 'Third Place Team'},
         {'competition': 'PicoCTF', 'award': 'Eighth Place Team'},
         {'competition': 'HP Codewars (Advanced)', 'award': 'Second Place'},
