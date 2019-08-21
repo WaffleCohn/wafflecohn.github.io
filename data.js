@@ -1,17 +1,12 @@
 var achievements = {
     'Computer Science':[
-        {'competition': 'Algorithms with a Purpose', 'award': 'Third Place Team'},
-        {'competition': 'UIL Computer Science (State)', 'award': 'Third Place Team'},
-        {'competition': 'PicoCTF', 'award': 'Eighth Place Team'},
-        {'competition': 'HP Codewars (Advanced)', 'award': 'Second Place'},
-        {'competition': 'Plano East HS Coding Contest', 'award': 'First Place (team), Sixth Place (indiv.)'},
-        {'competition': 'Richardson HS Coding Contest', 'award': 'First Place (team), Second Place (indiv.)'},
-        {'competition': 'USA Computing Olympiad', 'award': 'Platinum Division'},
+        {"competition": "Zillow HackWeek 19 CTF", "award": "1st Place"},
+        {"competition": "Algorithms with a Purpose 2018", "award": "3rd Place"},
+        {"competition": "UIL Computer Science", "award": "3rd Place in Texas"},
+        {"competition": "PicoCTF", "award": "8th Place (out of 11,000)"},
+        {"competition": "HP Codewars (Advanced)", "award": "2nd Place"},
+        {"competition": "USA Computing Olympiad", "award": "Platinum Division"},
         {'competition': 'Cyber Patriot', 'award': 'Platinum Division'},
-        {'competition': 'HP Codewars (Novice)', 'award': 'Third Place'},
-        {'competition': 'UTD Battle of the Brains (Spring)', 'award': 'First Place'},
-        {'competition': 'UTD Battle of the Brains (Fall)', 'award': 'Second Place'},
-        {'competition': 'Codeday Dallas', 'award': 'Best Application'}
     ],
 
     'Other':[
