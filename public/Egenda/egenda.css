@@ -1,0 +1,42 @@
+#logo-container, #badge-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+#logo
+{
+    width: 100px;
+    align-self: center;
+}
+
+#name
+{
+    color: white;
+    font-size: 38px;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif !important;
+    font-weight: lighter;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.row
+{
+    margin-top: 50px;
+}
+
+.store-badge
+{
+    width: 200px;
+    align-self: center;
+}
+
+.store-badge:first-of-type
+{
+    margin-right: 10px;
+}
+
+.store-badge:not(first-of-type)
+{
+    margin-left: 10px;
+}
