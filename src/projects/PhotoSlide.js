@@ -13,9 +13,9 @@ export default {
                 <img src="/img/photo-slide/toby_screenshot.png" alt="Screenshot of a slideshow in the app" />
                 <img src="/img/photo-slide/settings_screenshot.png" alt="Screenshot of the settings page in the app" />
             </div>
-            <div class="appstore-logo-container">
-                <A class="appstore-logo" href="https://apps.apple.com/us/app/photoslide-digital-photo-frame/id1278754073?ls=1">
-                    <img class="appstore-logo" alt='Get it on the App Store' src="/img/AppStoreBadge.svg" />
+            <div className="appstore-logo-container">
+                <A href="https://apps.apple.com/us/app/photoslide-digital-photo-frame/id1278754073?ls=1">
+                    <img className="appstore-logo" alt='Get it on the App Store' src="/img/AppStoreBadge.svg" />
                 </A>
             </div>
         </div>

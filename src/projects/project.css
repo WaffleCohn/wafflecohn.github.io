@@ -32,8 +32,9 @@
     margin-top: 1em;
 }
 
-.appstore-logo-container .appstore-logo:not(:last-child) {
-    margin-right: 16px;
+.appstore-logo-container .appstore-logo {
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .appstore-logo {

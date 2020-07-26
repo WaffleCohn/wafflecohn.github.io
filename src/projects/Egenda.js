@@ -14,12 +14,12 @@ export default {
                 <img src="/img/egenda/schedule_view.png" alt="screenshot of a student's schedule in the app" />
                 <img src="/img/egenda/assignment_view.png" alt="screenshot of a student's assignment in the app" />
             </div>
-            <div class="appstore-logo-container">
-                <A class="appstore-logo" href="https://itunes.apple.com/us/app/egenda-school-planner-assistant/id1142359153?mt=8">
-                    <img class="appstore-logo" alt='Get it on the App Store' src="/img/AppStoreBadge.svg" />
+            <div className="appstore-logo-container">
+                <A href="https://itunes.apple.com/us/app/egenda-school-planner-assistant/id1142359153?mt=8">
+                    <img className="appstore-logo" alt='Get it on the App Store' src="/img/AppStoreBadge.svg" />
                 </A>
-                <A class="appstore-logo" href='https://play.google.com/store/apps/details?id=studios.gr8bit.schoolmanager&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                    <img class="appstore-logo" alt='Get it on Google Play' src='/img/google-play-badge.png' />
+                <A href='https://play.google.com/store/apps/details?id=studios.gr8bit.schoolmanager&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                    <img className="appstore-logo" alt='Get it on Google Play' src='/img/google-play-badge.png' />
                 </A>
             </div>
         </div>
