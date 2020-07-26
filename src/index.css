@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* html, body, #root, .main-container, .background {
+  height: 100%;
+} */
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #212227;
+}
+
+.background {
+  position: absolute;
+  /* width: 100%; */
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  height: 100vh;
+}
+
+.background-row {
+  height: 100%;
+}
+
+
+.background-strip {
+  background: #AAB9CF;
+  height: 100%;
+}
+
+.main-container:not(#about) {
+  background: #AAB9CF;
+}

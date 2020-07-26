@@ -1,0 +1,41 @@
+#projects {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.project-item {
+    background: white;
+    box-shadow: -3px 5px 10px 0px #00000060;
+    /* padding: 16px; */
+    margin-top: 32px;
+}
+
+.project-item:hover {
+    cursor: pointer;
+}
+
+.project-icon {
+    padding: 0 !important;
+}
+
+.project-icon img {
+    width: 100%;
+}
+
+.project-description {
+    padding: 16px;
+    padding-left: 24px !important;
+}
+
+.more-info {
+    color: #ABB9CF;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}

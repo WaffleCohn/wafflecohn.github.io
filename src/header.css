@@ -1,0 +1,7 @@
+.navbar-header .nav-link {
+    color: #212227;
+}
+
+.navbar-header .nav-link.active {
+    color: #ABB9CF;
+}

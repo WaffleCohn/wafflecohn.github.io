@@ -1,0 +1,109 @@
+.about-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.about-popout {
+    background: white;
+    box-shadow: -3px 5px 10px 0px #00000060;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-image {
+    background: url(/img/headshot_front.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.profile-image:hover {
+    background: url(/img/headshot_back.jpg);
+    background-size: cover;
+}
+
+#contactButtons {
+    background: #AAB9CF;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.contact-button {
+    background: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    color: #212227;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.contact-button:hover {
+    background: #212227;
+    color: white;
+    cursor: pointer;
+}
+
+.about-text {
+    margin-left: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    max-width: 600px !important;
+    line-height: 1.75em;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#aboutButtons {
+    margin-top: 24px;
+}
+
+#aboutButtons button {
+    border-radius: 25px;
+    padding: 5px 25px;
+}
+
+#aboutButtons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#aboutButtons a:hover {
+    text-decoration: none;
+}
+
+#resumeButton {
+    background: #AAB9CF;
+    color: white;
+    border: 3px solid #AAB9CF;
+    margin-right: 16px;
+}
+
+#resumeButton:hover {
+    background: white;
+    color: #AAB9CF;
+}
+
+#projectsButton {
+    background: white;
+    border: 3px solid #212227;
+}
+
+#projectsButton:hover {
+    background: #212227;
+    color: white;
+}

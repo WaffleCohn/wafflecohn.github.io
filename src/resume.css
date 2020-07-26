@@ -1,0 +1,53 @@
+#resume {
+    padding-top: 48px;
+}
+
+#resume h1 {
+    color: white;
+    margin-bottom: 1rem !important;
+}
+
+#resume h3 {
+    font-weight: bold !important;
+}
+
+#resume p {
+    margin-bottom: 0 !important;
+}
+
+#resumePDFLink, #resumePDFLink a {
+    color: white;
+    width: 100%;
+    text-align: right;
+}
+
+.resume-section {
+    margin-top: 48px;
+}
+
+.resume-section:last-child {
+    padding-bottom: 48px;
+}
+
+.resume-item {
+    background: white;
+    box-shadow: -3px 5px 10px 0px #00000060;
+    padding: 16px;
+}
+
+.resume-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.resume-item-subtitle {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.resume-item-detail {
+    position: absolute;
+    right: 16px; /* equal to .resume-item padding */
+    line-height: 2rem; /* use line-height and height to vertically center, align with header */
+    height: 2rem;
+}
