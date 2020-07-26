@@ -7,6 +7,7 @@ import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Header from './Header';
 import Row from 'react-bootstrap/Row';
+import {Link} from 'react-router-dom';
 
 import './about.css';
 
@@ -51,8 +52,12 @@ class About extends React.Component {
                                 <h1 className="title">Ari Cohn</h1>
                                 <p>Hi, I’m Ari! I’m a senior studying Computer Science at Carnegie Mellon University with a minor in Economics. This fall, I will be co-teaching a course titled Introduction to Esoteric Programming Languages as well as TAing for 15-330 Introduction to Computer Security. Outside of school, I enjoy biking, soccer, and volleyball.</p>
                                 <div id="aboutButtons">
-                                    <a href="/resume"><button id="resumeButton">Resume</button></a>
-                                    <a href="/projects"><button id="projectsButton">Projects</button></a>
+                                    <Link to="/resume">
+                                        <button id="resumeButton">Resume</button>
+                                    </Link>
+                                    <Link to="/projects">
+                                        <button id="projectsButton">Projects</button>
+                                    </Link>
                                 </div>
                             </Col>
                         </Row>

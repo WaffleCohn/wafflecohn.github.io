@@ -5,32 +5,35 @@ import Container from 'react-bootstrap/Container';
 import Header from './Header';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
+import {Link} from 'react-router-dom';
 
 import './projects.css';
 
 function navigateTo(url) {
-    if (url) {
-        document.location.href = url;
-    }
+    // if (url) {
+    //     document.location.href = url;
+    // }
 }
 
 var ProjectItem = props => (
-    <Col className="project-item" sm={12} onClick={navigateTo.bind(null, props.url)}>
-        <Row>
-            <Col className="project-icon" sm={2}>
-                <Image
-                    src={props.img}
-                    style={{ background: props.imgBackground || "white" }}
-                />
-            </Col>
+    <Link to={props.url}>
+        <Col className="project-item" sm={12} onClick={navigateTo.bind(null, props.url)}>
+            <Row>
+                <Col className="project-icon" sm={2}>
+                    <Image
+                        src={props.img}
+                        style={{ background: props.imgBackground || "white" }}
+                    />
+                </Col>
 
-            <Col className="project-description" sm={10}>
-                <h3>{props.title}</h3>
-                {props.content}
-                <div className="more-info">find out more</div>
-            </Col>
-        </Row>
-    </Col>
+                <Col className="project-description" sm={10}>
+                    <h3>{props.title}</h3>
+                    {props.content}
+                    <div className="more-info">find out more</div>
+                </Col>
+            </Row>
+        </Col>
+    </Link>
 );
 
 // TODO: add WWW.Booth

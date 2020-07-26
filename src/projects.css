@@ -3,6 +3,11 @@
     padding-bottom: 48px;
 }
 
+#projects a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #title {
     color: white;
     text-align: center;
