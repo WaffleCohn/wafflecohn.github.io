@@ -19,7 +19,7 @@ function NavLink(props) {
 class Header extends React.Component {
     render() {
         return (
-            <Navbar bg="white" className="justify-content-end" expand="lg" variant="header" fixed="top">
+            <Navbar bg="white" className="justify-content-end" expand="lg" id="header" variant="header" fixed="top">
                 <Nav activeKey={this.props.activeKey || "about"}>
                     <NavLink eventKey="about" title="About Me" />
                     <NavLink eventKey="resume" title="Resume" />

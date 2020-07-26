@@ -12,10 +12,6 @@ import './resume.css';
 
 var ResumeItem = (props) => (
     <Col className="resume-item" sm={12}>
-        {props.detail ?
-            (<span className="resume-item-detail">{props.detail}</span>)
-            : <div />
-        }
         <h3>
             {props.title}
             {props.subtitle ? ' | ' : ''}
@@ -24,6 +20,10 @@ var ResumeItem = (props) => (
                 : <></>
             }
         </h3>
+        {props.detail ?
+            (<span className="resume-item-detail">{props.detail}</span>)
+            : <div />
+        }
         {props.content}
     </Col>
 );

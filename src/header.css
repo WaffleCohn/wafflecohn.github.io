@@ -1,11 +1,22 @@
-.navbar-header .nav-link {
+/* prevent mobile from changing flex-direction to col */
+#header .navbar-nav {
+    flex-direction: row;
+}
+
+#header .nav-link {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+/* ---- */
+
+#header .nav-link {
     color: #212227;
 }
 
-.navbar-header .nav-link.active {
+#header .nav-link.active {
     color: #ABB9CF;
 }
 
-.navbar-header a:hover {
+#header a:hover {
     text-decoration: none;
 }

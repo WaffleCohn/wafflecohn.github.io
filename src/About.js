@@ -31,14 +31,19 @@ class About extends React.Component {
 
                 <Container className="background" fluid>
                     <Row className="background-row">
-                        <Col className="background-strip" xs={5}></Col>
+                        <Col className="background-strip" xs={12} lg={5}></Col>
                     </Row>
                 </Container>
 
                 <div className="about-content">
                     <Container fluid>
                         <Row>
-                            <Col className="about-popout" xs={{ span: 2 , offset: 4 }}>
+                            <Col 
+                                className="about-popout"
+                                xs={{ span: 10, offset: 1 }}
+                                sm={{ span: 8, offset: 2 }}
+                                lg={{ span: 2, offset: 4 }}
+                            >
                                 <div className="profile-image" />
 
                                 <div id="contactButtons">
@@ -48,7 +53,12 @@ class About extends React.Component {
                                     <ContactButton href="https://www.facebook.com/ari.cohn.7" icon={faFacebook} title="Facebook" />
                                 </div>
                             </Col>
-                            <Col className="about-text" xs={5}>
+                            <Col
+                                className="about-text" 
+                                xs={{ span: 12, offset: 0 }}
+                                sm={{ span: 8, offset: 2 }}
+                                lg={{span: 5, offset: 0 }}
+                            >
                                 <h1 className="title">Ari Cohn</h1>
                                 <p>Hi, I’m Ari! I’m a senior studying Computer Science at Carnegie Mellon University with a minor in Economics. This fall, I will be co-teaching a course titled Introduction to Esoteric Programming Languages as well as TAing for 15-330 Introduction to Computer Security. Outside of school, I enjoy biking, soccer, and volleyball.</p>
                                 <div id="aboutButtons">

@@ -13,14 +13,22 @@ var ProjectItem = props => (
     <Link to={props.url}>
         <Col className="project-item" sm={12}>
             <Row>
-                <Col className="project-icon" sm={2}>
+                <Col 
+                    className="project-icon"
+                    md={3}
+                    lg={2}
+                >
                     <Image
                         src={props.img}
                         style={{ background: props.imgBackground || "white" }}
                     />
                 </Col>
 
-                <Col className="project-description" sm={10}>
+                <Col
+                    className="project-description"
+                    md={9}
+                    lg={10}
+                >
                     <h3>{props.title}</h3>
                     {props.content}
                     <div className="more-info">find out more</div>
@@ -48,7 +56,7 @@ class Projects extends React.Component {
                         <ProjectItem
                             title="Egenda"
                             img="/img/egenda-logo.png"
-                            content="Egenda is a homework planner and organizer for iOS and Android devices. It has over 500,000 downloads since August 2016."
+                            content="Egenda is a homework planner and organizer for iOS and Android devices. It has over 500k downloads since August 2016."
                             url="projects/egenda"
                         />
 
@@ -63,14 +71,14 @@ class Projects extends React.Component {
                             title="Space Invaders 2018"
                             img="/img/SpaceInvadersLogo.png"
                             imgBackground="black"
-                            content="Space Invaders 2018 is a modernized version of the classic arcade game I made with my team at the Pennapps hackathon. It uses an iPhone as a controller with a website displaying the game."
+                            content="Modernized version of the classic arcade game I made with my team at the Pennapps hackathon. It uses an iPhone as a controller with a website displaying the game."
                             url="projects/space-invaders"
                         />
 
                         <ProjectItem
                             title="PhotoSlide"
                             img="/img/photoslide-logo.png"
-                            content="PhotoSlide is an app that transforms your iPad into a digital photo frame that can endlessly scroll through photos with several kinds of transitions."
+                            content="An app that transforms your iPad into a digital photo frame that can endlessly scroll through photos with several kinds of transitions."
                             url="projects/photo-slide"
                         />
                     </Col>

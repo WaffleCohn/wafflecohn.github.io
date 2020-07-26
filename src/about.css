@@ -20,6 +20,7 @@
     height: 150px;
     margin: auto;
     border-radius: 100%;
+    margin-bottom: 70px; /* accounts for contact buttons bar */
 }
 
 .profile-image:hover {
@@ -106,4 +107,36 @@
 #projectsButton:hover {
     background: #212227;
     color: white;
+}
+
+/* smaller screens (bootstrap: < lg) */
+@media screen and (max-width: 992px) {
+    .about-content {
+        background: #AAB9CF;
+        top: unset;
+        transform: unset;
+        margin-top: 80px;
+    }
+
+    .about-text {
+        background: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    #aboutButtons {
+        text-align: center;
+    }
+}
+
+/* bootstrap: <= xs */
+@media screen and (max-width: 575px) {
+    .about-content {
+        background: unset;
+    }
+
+    .about-text {
+        margin-left: 0;
+        border-radius: 0;
+    }
 }

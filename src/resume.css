@@ -47,7 +47,17 @@
 
 .resume-item-detail {
     position: absolute;
+    top: 18px; /* .resume-item padding + 2 */
     right: 16px; /* equal to .resume-item padding */
     line-height: 2rem; /* use line-height and height to vertically center, align with header */
     height: 2rem;
+}
+
+/* smaller screens (bootstrap: < lg) */
+@media screen and (max-width: 1000px) {
+    .resume-item-detail {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
