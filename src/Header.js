@@ -8,9 +8,11 @@ import './header.css'
 
 function NavLink(props) {
     return (
-        <Link to={'/' + props.eventKey}>
-            <Nav.Link href={'/' + props.eventKey} eventKey={props.eventKey}>{props.title}</Nav.Link>
-        </Link>
+        <Nav.Item>
+            <Link to={'/' + props.eventKey}>
+                <Nav.Link as="span" href={'/' + props.eventKey} eventKey={props.eventKey}>{props.title}</Nav.Link>
+            </Link>
+        </Nav.Item>
     )
 }
 
@@ -19,15 +21,9 @@ class Header extends React.Component {
         return (
             <Navbar bg="white" className="justify-content-end" expand="lg" variant="header" fixed="top">
                 <Nav activeKey={this.props.activeKey || "about"}>
-                    <Nav.Item>
-                        <NavLink eventKey="about" title="About Me" />
-                    </Nav.Item>
-                    <Nav.Item>
-                        <NavLink eventKey="resume" title="Resume" />
-                    </Nav.Item>
-                    <Nav.Item>
-                        <NavLink eventKey="projects" title="Projects" />
-                    </Nav.Item>
+                    <NavLink eventKey="about" title="About Me" />
+                    <NavLink eventKey="resume" title="Resume" />
+                    <NavLink eventKey="projects" title="Projects" />
                 </Nav>
             </Navbar>
         );

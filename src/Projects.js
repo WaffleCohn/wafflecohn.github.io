@@ -9,15 +9,9 @@ import {Link} from 'react-router-dom';
 
 import './projects.css';
 
-function navigateTo(url) {
-    // if (url) {
-    //     document.location.href = url;
-    // }
-}
-
 var ProjectItem = props => (
     <Link to={props.url}>
-        <Col className="project-item" sm={12} onClick={navigateTo.bind(null, props.url)}>
+        <Col className="project-item" sm={12}>
             <Row>
                 <Col className="project-icon" sm={2}>
                     <Image

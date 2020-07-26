@@ -1,5 +1,6 @@
 import React from 'react';
 
+import {NewTabLink as A} from './Utils.js';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -91,7 +92,7 @@ class Resume extends React.Component {
                                 detail="Aug 2018 - Present"
                                 content={(
                                     <ul>
-                                        <li>Teaching Assistant for <a href="http://www.cs.cmu.edu/~15122-archive/f18/" target="_blank" rel="noopener noreferrer">Principles of Imperative Computation (15-122)</a> &amp; <a href="https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/index.html" target="_blank" rel="noopener noreferrer">Principles of Software Construction (17-214)</a>.</li>
+                                        <li>Teaching Assistant for <A href="http://www.cs.cmu.edu/~15122-archive/f18/">Principles of Imperative Computation (15-122)</A> &amp; <A href="https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/index.html">Principles of Software Construction (17-214)</A>.</li>
                                         <li>Lead labs and recitations and provided office hours while assisting with grading and course infrastructure.</li>
                                     </ul>
                                 )}

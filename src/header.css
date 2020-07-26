@@ -5,3 +5,7 @@
 .navbar-header .nav-link.active {
     color: #ABB9CF;
 }
+
+.navbar-header a:hover {
+    text-decoration: none;
+}

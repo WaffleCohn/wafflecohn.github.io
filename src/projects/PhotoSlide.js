@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {NewTabLink as A} from '../Utils.js';
+
 export default {
     'title': 'PhotoSlide',
     'content': (
@@ -12,9 +14,9 @@ export default {
                 <img src="/img/photo-slide/settings_screenshot.png" alt="Screenshot of the settings page in the app" />
             </div>
             <div class="appstore-logo-container">
-                <a class="appstore-logo" href="https://apps.apple.com/us/app/photoslide-digital-photo-frame/id1278754073?ls=1">
+                <A class="appstore-logo" href="https://apps.apple.com/us/app/photoslide-digital-photo-frame/id1278754073?ls=1">
                     <img class="appstore-logo" alt='Get it on the App Store' src="/img/AppStoreBadge.svg" />
-                </a>
+                </A>
             </div>
         </div>
     )
