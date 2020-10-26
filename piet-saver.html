@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>PietSaver</title>
+    <style>
+      h1,
+      p {
+        text-align: center;
+      }
+
+      h1 {
+        padding-top: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PietSaver</h1>
+    <p>
+      PietSaver is a bookmarklet that allows you to save your Piet code when
+      using the Piet IDE <a href="https://gabriellesc.github.io/piet/">here</a>
+    </p>
+    <p>
+      Clicking on the link executes some JavaScript code, so only use it when
+      you are on the IDE's website.
+    </p>
+    <br />
+    <p>Drag the following link into your bookmark bar:</p>
+    <p>
+      <a
+        href="javascript:(function()%7Bvar%20width%20%3D%20%2Bdocument.getElementsByClassName(%22form-control%22)%5B1%5D.value%2Cheight%20%3D%20%2Bdocument.getElementsByClassName(%22form-control%22)%5B2%5D.value%2Cscale%20%3D%20%2Bdocument.getElementsByClassName(%22form-control%22)%5B0%5D.value%3Bvar%20image%20%3D%20new%20Jimp(scale%20*%20width%2C%20scale%20*%20height)%3Bvar%20grid%20%3D%20%5B%5D%3Bfor%20(i%3D0%3B%20i%20%3C%20height%3B%20i%2B%2B)%20grid%5Bi%5D%20%3D%20new%20Array(width)%3Bvar%20cells%20%3D%20%5B...document.getElementsByTagName(%22table%22)%5B1%5D.getElementsByTagName(%22td%22)%5D%3Bcells.forEach((c%2C%20i)%20%3D%3E%20grid%5BMath.floor(i%2Fheight)%5D%5Bi%25width%5D%20%3D%20c.style.background)%3Bvar%20grid2%20%3D%20new%20Array(scale%20*%20height)%3Bfor%20(i%3D0%3B%20i%20%3C%20scale%20*%20height%3B%20i%2B%2B)%20grid2%5Bi%5D%20%3D%20new%20Array(scale%20*%20width)%3Bfor%20(i%20%3D%200%3B%20i%20%3C%20scale%20*%20height%3B%20i%2B%2B)%20%7Bfor%20(j%20%3D%200%3B%20j%20%3C%20scale%20*%20width%3B%20j%2B%2B)%20%7Bgrid2%5Bi%5D%5Bj%5D%20%3D%20grid%5BMath.floor(i%20%2F%20scale)%5D%5BMath.floor(j%20%2F%20scale)%5D%3B%7D%7Dgrid%20%3D%20grid2%3Bfunction%20rgb2hex(rgb)%20%7Bvar%20a%20%3D%20rgb.split(%22(%22)%5B1%5D.split(%22)%22)%5B0%5D%3Ba%20%3D%20a.split(%22%2C%22)%3Bvar%20b%20%3D%20a.map(function(x)%7Bx%20%3D%20parseInt(x).toString(16)%3Breturn%20(x.length%3D%3D1)%20%3F%20%220%22%2Bx%20%3A%20x%3B%7D)%3Bb%20%3D%20%220x%22%2Bb.join(%22%22)%20%2B%20%22ff%22%3Breturn%20b%3B%7Dfor%20(i%20%3D%200%3B%20i%20%3C%20grid.length%3B%20i%2B%2B)%20%7Bfor%20(j%20%3D%200%3B%20j%20%3C%20grid%5Bi%5D.length%3B%20j%2B%2B)%20%7Bgrid%5Bi%5D%5Bj%5D%20%3D%20%2Brgb2hex(grid%5Bi%5D%5Bj%5D)%3B%7D%7Dimage.scan(0%2C%200%2C%20scale%20*%20width%2C%20scale%20*%20height%2C%20function%20(x%2C%20y)%20%7Bimage.setPixelColour(grid%5By%5D%5Bx%5D%2C%20x%2C%20y)%3B%7D)%3Bimage.getBase64(Jimp.MIME_PNG%2C%20function%20(_%2C%20uri)%20%7Bvar%20a%20%20%3D%20document.createElement(%22a%22)%3Ba.href%20%3D%20uri%3Ba.download%20%3D%20%22piet.png%22%3Ba.click()%3B%7D)%7D)()"
+        >PietSaver</a
+      >
+    </p>
+  </body>
+</html>
