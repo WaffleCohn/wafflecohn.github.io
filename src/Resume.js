@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import { NewTabLink as A } from "./Utils.js";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import Header from "./Header";
-import Row from "react-bootstrap/Row";
+import { NewTabLink as A } from './Utils.js';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import Header from './Header';
+import Row from 'react-bootstrap/Row';
 
-import "./resume.css";
+import './resume.css';
 
 var ResumeItem = (props) => (
   <Col className="resume-item" sm={12}>
     <h3>
       {props.title}
-      {props.subtitle ? " | " : ""}
+      {props.subtitle ? ' | ' : ''}
       {props.subtitle ? (
         <span className="resume-item-subtitle">{props.subtitle}</span>
       ) : (
@@ -113,15 +113,15 @@ class Resume extends React.Component {
                 content={
                   <ul>
                     <li>
-                      TA for{" "}
+                      TA for{' '}
                       <A href="https://www.andrew.cmu.edu/course/18-330/2020f/">
                         Computer Security (15-330)
                       </A>
-                      ,{" "}
+                      ,{' '}
                       <A href="http://www.cs.cmu.edu/~15122-archive/f18/">
                         Principles of Imperative Computation (15-122)
                       </A>
-                      , and{" "}
+                      , and{' '}
                       <A href="https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/index.html">
                         Principles of Software Construction (17-214)
                       </A>

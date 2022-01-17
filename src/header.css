@@ -1,22 +1,22 @@
 /* prevent mobile from changing flex-direction to col */
 #header .navbar-nav {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 #header .nav-link {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 /* ---- */
 
 #header .nav-link {
-    color: #212227;
+  color: #212227;
 }
 
 #header .nav-link.active {
-    color: #ABB9CF;
+  color: #abb9cf;
 }
 
 #header a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }

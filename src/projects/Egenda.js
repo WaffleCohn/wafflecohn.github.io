@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { NewTabLink as A } from "../Utils.js";
+import { NewTabLink as A } from '../Utils.js';
 
 export default {
-  title: "Egenda",
+  title: 'Egenda',
   content: (
     <div>
       <p>

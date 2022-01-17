@@ -1,42 +1,42 @@
 #project {
-    padding-top: 48px;
-    padding-bottom: 48px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 #title {
-    color: white;
-    text-align: center;
-    margin-top: 48px;
+  color: white;
+  text-align: center;
+  margin-top: 48px;
 }
 
 #content {
-    background: white;
-    box-shadow: -3px 5px 10px 0px #00000060;
-    padding: 16px;
-    margin-top: 32px;
+  background: white;
+  box-shadow: -3px 5px 10px 0px #00000060;
+  padding: 16px;
+  margin-top: 32px;
 }
 
 .scrolling-carousel {
-    height: 400px;
-    overflow-x: scroll;
-    white-space: nowrap;
+  height: 400px;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
 .scrolling-carousel img {
-    height: 100%;
-    margin: 0 10px;
+  height: 100%;
+  margin: 0 10px;
 }
 
 .appstore-logo-container {
-    text-align: center;
-    margin-top: 1em;
+  text-align: center;
+  margin-top: 1em;
 }
 
 .appstore-logo-container .appstore-logo {
-    margin-left: 8px;
-    margin-right: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .appstore-logo {
-    height: 60px;
+  height: 60px;
 }

@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import Header from "./Header";
-import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-import { Link } from "react-router-dom";
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Header from './Header';
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+import { Link } from 'react-router-dom';
 
-import "./projects.css";
+import './projects.css';
 
 var ProjectItem = (props) => (
   <Link to={props.url}>
@@ -16,7 +16,7 @@ var ProjectItem = (props) => (
         <Col className="project-icon" md={3} lg={2}>
           <Image
             src={props.img}
-            style={{ background: props.imgBackground || "white" }}
+            style={{ background: props.imgBackground || 'white' }}
           />
         </Col>
 

@@ -16,7 +16,13 @@ code {
   height: 100%;
 } */
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #212227;
 }
 
@@ -33,12 +39,11 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
-
 .background-strip {
-  background: #AAB9CF;
+  background: #aab9cf;
   height: 100%;
 }
 
 .main-container:not(#about) {
-  background: #AAB9CF;
+  background: #aab9cf;
 }

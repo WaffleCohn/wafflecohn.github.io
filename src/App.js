@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from 'react-router-dom';
 import About from './About';
 import Resume from './Resume';
 import Projects from './Projects';
@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render() {
-    return ( 
+    return (
       <Router basename="/">
         <Route exact path="/" component={About} />
         <Route exact path="/about" component={About} />
