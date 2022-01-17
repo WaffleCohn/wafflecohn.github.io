@@ -3,8 +3,12 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebook,
+  faGithub,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 import Header from './Header';
 import Row from 'react-bootstrap/Row';
 import { Link } from 'react-router-dom';
@@ -54,9 +58,9 @@ class About extends React.Component {
 
                 <div id="contactButtons">
                   <ContactButton
-                    href="mailto:ari.b.cohn@gmail.com"
-                    icon={faEnvelope}
-                    title="Email"
+                    href="https://www.linkedin.com/in/ari-cohn/"
+                    icon={faLinkedin}
+                    title="LinkedIn"
                   />
                   <ContactButton
                     href="/Resume.pdf"
@@ -83,12 +87,9 @@ class About extends React.Component {
               >
                 <h1 className="title">Ari Cohn</h1>
                 <p>
-                  Hi, I’m Ari! I’m a senior studying Computer Science at
-                  Carnegie Mellon University with a minor in Economics. This
-                  fall, I will be co-teaching a course titled Introduction to
-                  Esoteric Programming Languages as well as TAing for 15-330
-                  Introduction to Computer Security. Outside of school, I enjoy
-                  biking, soccer, and volleyball.
+                  Hey, I'm Ari! I recently graduated from Carnegie Mellon
+                  University with a degree in Computer Science and minor in
+                  Economics. I now work as a software engineer for Meta in NYC.
                 </p>
                 <div id="aboutButtons">
                   <Link to="/resume">
