@@ -48,7 +48,7 @@ class Projects extends React.Component {
             <ProjectItem
               title="Egenda"
               img="/img/egenda-logo.png"
-              content="Egenda is a homework planner and organizer for iOS and Android devices. It has almost 1 million downloads since August 2016."
+              content="Egenda is a homework planner and organizer for iOS and Android devices. It has over 1 million downloads since August 2016."
               url="projects/egenda"
             />
 

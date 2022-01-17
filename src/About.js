@@ -63,7 +63,7 @@ class About extends React.Component {
                     title="LinkedIn"
                   />
                   <ContactButton
-                    href="/Resume.pdf"
+                    href="/resume.pdf"
                     icon={faFile}
                     title="Resume (pdf)"
                   />

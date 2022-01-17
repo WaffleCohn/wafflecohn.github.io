@@ -44,25 +44,39 @@ class Resume extends React.Component {
           <Col sm={{ span: 10, offset: 1 }}>
             <Row className="resume-section">
               <p id="resumePDFLink">
-                <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                   PDF Version <FontAwesomeIcon icon={faExternalLinkAlt} />
                 </a>
               </p>
               <h1>Education</h1>
               <ResumeItem
                 title="Carnegie Mellon University"
-                detail="Expected May 2021"
+                detail={
+                  <>
+                    Aug 2020 - May 2021
+                    <br />
+                    4.0 GPA
+                  </>
+                }
                 content={
                   <div>
                     <p>B.S. in Computer Science, Minor in Economics</p>
-                    <p>4.0 GPA</p>
                   </div>
                 }
+              />
+              <ResumeItem
+                title="Plano West Senior High School"
+                detail="Class of 2017"
               />
             </Row>
 
             <Row className="resume-section">
-              <h1>Experience</h1>
+              <h1>Work Experience</h1>
+              <ResumeItem
+                title="Meta"
+                subtitle="Software Engineer"
+                detail="Jun 2021 - Present"
+              />
               <ResumeItem
                 title="Facebook"
                 subtitle="SWE Intern"
@@ -71,10 +85,10 @@ class Resume extends React.Component {
                   <ul>
                     <li>
                       Completed two full-stack projects implementing Alt Text
-                      and Product Tagging for Instagram in FB’s Creator Studio.
+                      and Product Tagging for Instagram in FB's Creator Studio.
                     </li>
                     <li>
-                      Contributed to my team’s Quality Week, closing over 20
+                      Contributed to my team's Quality Week, closing over 20
                       tasks to improve code quality.
                     </li>
                     <li>
@@ -91,7 +105,7 @@ class Resume extends React.Component {
                 content={
                   <ul>
                     <li>
-                      Implemented a redesign of the Zillow Android app’s
+                      Implemented a redesign of the Zillow Android app's
                       onboarding pages and changed font for the whole app.
                     </li>
                     <li>
@@ -101,35 +115,6 @@ class Resume extends React.Component {
                     <li>
                       Won first place in a Zillow-wide CTF (cybersecurity
                       contest) during hackweek.
-                    </li>
-                  </ul>
-                }
-              />
-
-              <ResumeItem
-                title="Carnegie Mellon University"
-                subtitle="Teaching Assistant"
-                detail="Aug 2018 – May 2019, Jan 2020 – Present"
-                content={
-                  <ul>
-                    <li>
-                      TA for{' '}
-                      <A href="https://www.andrew.cmu.edu/course/18-330/2020f/">
-                        Computer Security (15-330)
-                      </A>
-                      ,{' '}
-                      <A href="http://www.cs.cmu.edu/~15122-archive/f18/">
-                        Principles of Imperative Computation (15-122)
-                      </A>
-                      , and{' '}
-                      <A href="https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/index.html">
-                        Principles of Software Construction (17-214)
-                      </A>
-                      .
-                    </li>
-                    <li>
-                      Lead labs and recitations and provided office hours while
-                      assisting with grading and course infrastructure.
                     </li>
                   </ul>
                 }
@@ -148,6 +133,79 @@ class Resume extends React.Component {
                     <li>
                       Worked on creating and maintaining REST endpoints as well
                       as building custom validation software for API testing.
+                    </li>
+                  </ul>
+                }
+              />
+            </Row>
+
+            <Row className="resume-section">
+              <h1>Teaching</h1>
+              <ResumeItem
+                title="CMU StuCo"
+                subtitle="Instructor"
+                detail="Aug 2020 - May 2021"
+                content={
+                  <ul>
+                    <li>
+                      Co-led a student-taught course ("StuCo") about esoteric
+                      programming languages.
+                    </li>
+                    <li>
+                      Gave lectures, handled course administration and
+                      logistics, and built a{' '}
+                      <A href="https://esolab.org">website</A> to help students
+                      learn.
+                    </li>
+                  </ul>
+                }
+              />
+              <ResumeItem
+                title="Carnegie Mellon University"
+                subtitle="Teaching Assistant"
+                detail="Aug 2018 - May 2019, Jan - Dec 2020"
+                content={
+                  <ul>
+                    <li>
+                      TA for{' '}
+                      <A href="https://www.andrew.cmu.edu/course/18-330/2020f/">
+                        Intro to Computer Security (15-330)
+                      </A>
+                      ,{' '}
+                      <A href="http://www.cs.cmu.edu/~15122-archive/f18/">
+                        Principles of Imperative Computation (15-122)
+                      </A>
+                      ,{' '}
+                      <A href="https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/index.html">
+                        Principles of Software Construction (17-214)
+                      </A>
+                      , and Principles of Microeconomics (73-102).
+                    </li>
+                    <li>
+                      Led labs and recitations and provided office hours while
+                      assisting with grading and course infrastructure.
+                    </li>
+                  </ul>
+                }
+              />
+              <ResumeItem
+                title="Scotty Labs Tech Talks"
+                detail="Fall 2017 - Spring 2019"
+                content={
+                  <ul>
+                    <li>
+                      Gave an original tech talk about front-end JavaScript for
+                      3{' '}
+                      <A href="https://wdw.scottylabs.org/">Web Dev Weekend</A>{' '}
+                      workshops hosted by CMU's Scotty Labs.
+                    </li>
+                    <li>
+                      Created an interactive{' '}
+                      <A href="https://github.com/WaffleCohn/javascript-lab">
+                        lab
+                      </A>{' '}
+                      that guides participants through building a simple web
+                      game with JavaScript.
                     </li>
                   </ul>
                 }

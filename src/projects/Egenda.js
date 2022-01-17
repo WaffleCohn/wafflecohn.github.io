@@ -9,7 +9,7 @@ export default {
       <p>
         Egenda is an app for iOS and Android that helps students quickly and
         easily manage all of their assignments, projects, quizzes, and tests.
-        Since its release in August 2016, Egenda has been downloaded almost 1
+        Since its release in August 2016, Egenda has been downloaded over 1
         million times.
       </p>
       <p>
